@@ -12,7 +12,7 @@ console.log(sum);
 
 // 3. Calculate the average of array items and print it to the console using console.log()
 
-let avg=0;
+let sum=0;
 for(let item of numbers){
     sum+=item;
 }
@@ -20,11 +20,25 @@ console.log(sum/numbers.length);
 
 // 4. Find the highest number in the array and print it to the console using console.log()
 
+let heighestNumber = [0];
 
+for (let numbers of numbers){
+    if(numbers > heighestNumber){
+        heighestNumber = numbers;
+    }
+}
+console.log(heighestNumber);
 
 // 5. Find the lowest number in the array and print it to the console using console.log()
 
+let lowestNumber = [0];
 
+for (let numbers of numbers){
+    if(numbers < lowestNumber){
+        lowestNumber = numbers;
+    }
+}
+console.log(lowestNumber);
 
 // 6. Find the even numbers in the array and print them to the console using console.log()
 
