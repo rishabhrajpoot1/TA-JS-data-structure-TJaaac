@@ -5,53 +5,35 @@ let userIds = [1230, 234, 1278, 984, 763, 900];
 // 1. Add all the values of numbers and userIds array into the new newly created array named `collection`
 
 let collection=[];
-let sumNum=0;
-let sumIds=0;
-for(let i=0;i<numbers.length;i++){
-    sumNum+=numbers[i];
-}
-collection.push(sumNum);
-for(let i=0;i<userIds.length;i++){
-  sumIds+=userIds[i];
-}
-collection.push(sumIds);
 
+for(let num of nmbers){
+ collection.push(num)
+}
+for(let id of userIds){
+  collection.push(id)
+ }
+
+console.log(collection)
 // 2. Add all the even numbers from both arrays numbers and userIds into a newly created array named `evenCollection`
 
 let evenCollection=[];
-let evenSumNum=0;
-let evenSumIds=0;
-for(let i=0;i<numbers.length;i++){
-    if( numbers[i]%2===0){
-      evenSumNum+=numbers[i];
-    }
-}
-evenCollection.push(evenSumNum);
-for(let i=0;i<userIds.length;i++){
-  if( userIds[i]%2===0){
-    evenSumIds+=userIds[i];
-  }
-}
-evenCollection.push(evenSumNum)
 
+for(let num of collection){
+  if(num%2 == 0){
+  evenCollection.push(num)
+ }
+}
+console.log(evenCollection)
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
 
-let oddCollection=[];
-let oddSumNum=0;
-let oddSumIds=0;
-for(let i=0;i<numbers.length;i++){
-    if( numbers[i]%2!==0){
-      oddSumNum+=numbers[i];
-    }
-}
-oddCollection.push(oddSumNum);
-for(let i=0;i<userIds.length;i++){
-  if( userIds[i]%2!==0){
-    oddSumIds+=userIds[i];
-  }
-}
-oddCollection.push(oddSumIds);
+let evenCollection=[];
 
+for(let num of collection){
+  if(num%2 !== 0){
+  evenCollection.push(num)
+ }
+}
+console.log(oddCollection)
 /*
   @param means parameter
 
